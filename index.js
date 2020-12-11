@@ -11,7 +11,8 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet() {
-  let hour = new Date.getHours();
+  let d = new Date
+  let hour = d.getHours();
   if(hour <12){
     return "Good Morning";
   }
