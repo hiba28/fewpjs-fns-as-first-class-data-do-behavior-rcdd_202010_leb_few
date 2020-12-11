@@ -14,13 +14,13 @@ function greet() {
   let d = new Date
   let hour = d.getHours();
   let ampm = hour >= 12 ? 'pm' : 'am';
-  if(hour < 12){
+  if(hour < 12 && ampm === "am"){
     return "Good Morning";
   }
-  else if(hour > 12 && hour <5){
+  else if(hour > 12 && hour <5 && ampm === "pm"){
     return "Good Afternoon";
   }
-  else if(hour > 5){
+  else if(hour > 5 && ampm === "pm"){
     return "Good Evening"
   }
 }
