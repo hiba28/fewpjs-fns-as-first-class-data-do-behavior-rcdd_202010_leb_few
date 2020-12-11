@@ -11,16 +11,14 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet(string) {
-  let arr = string.split(" ")
-  let hour = parseInt(arr[0])
-  let ampm = arr[1]
-  if(hour < 12 && ampm === "am"){
+  let hour = parseInt(string,10)
+  if(hour < 12){
     return "Good Morning";
   }
-  else if(hour > 12 && hour <5 && ampm === "pm"){
+  else if(hour > 12 && hour <5){
     return "Good Afternoon";
   }
-  else if(hour > 5 && ampm === "pm"){
+  else if(hour > 5){
     return "Good Evening"
   }
 }
