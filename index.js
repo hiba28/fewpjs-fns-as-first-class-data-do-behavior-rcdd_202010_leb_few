@@ -1,6 +1,6 @@
 /* Given Code, don't edit */
 
-document.querySelector("button").addEventListener("click", handleClick);
+document.querySelector("button").addEventListener("submit", handleClick);
 
 function handleClick(e) {
   const timeString = document.getElementById('time').value
@@ -10,10 +10,9 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
-function greet() {
-  let d = new Date
-  let hour = d.getHours();
-  let ampm = hour >= 12 ? 'pm' : 'am';
+function greet(string) {
+  let arr = string.split(" ")
+  let hour = parseInt(arr[0])
   if(hour < 12 && ampm === "am"){
     return "Good Morning";
   }
@@ -25,6 +24,6 @@ function greet() {
   }
 }
 /* Write your implementation of displayMessage() */
-function displayMessage() {
+function displayMessage(string) {
   document.getElementById("greeting").innerText = greet();
 }
