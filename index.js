@@ -3,6 +3,7 @@
 document.querySelector("button").addEventListener("submit", handleClick);
 
 function handleClick(e) {
+  e.preventDefault();
   const timeString = document.getElementById('time').value
   displayMessage(greet(timeString))
 }
