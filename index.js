@@ -5,7 +5,7 @@ document.querySelector("button").addEventListener("submit", handleClick);
 function handleClick(e) {
   e.preventDefault();
   const timeString = parseInt(document.getElementById('time').value.split(":"))
-  
+
   displayMessage(greet(timeString))
 }
 
