@@ -13,6 +13,7 @@ function handleClick(e) {
 function greet(string) {
   let arr = string.split(" ")
   let hour = parseInt(arr[0])
+  let ampm = arr[1]
   if(hour < 12 && ampm === "am"){
     return "Good Morning";
   }
